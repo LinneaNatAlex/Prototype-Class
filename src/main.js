@@ -1,9 +1,7 @@
-// const numbers = [1, 2, 3, 4, 5, 6];
-// const person = {firstname: "Linnea"};
-// function printMessage () {
-//     console.log("Hello world");
-// };
-
+/**
+ * **OBJECT CONSTRUCTOR PROTOTYPE:**
+ **/
+ 
 //THIS IS THE IS A WAY TO GET A PROTOTYPE:
 
 // console.log(Object.getPrototypeOf(person));
@@ -27,7 +25,10 @@ const secondVehicle = {
 };
 //THIS IS AN OLD PROTOTYPE WAY TO CONNECT OBJECTS:
 // secondVehicle.__proto__ = firstVehicle;
+
+//THIS IS A NEW WAY TO CONNECT OBJECTS(USE THIS!!!):
 Object.setPrototypeOf(secondVehicle, firstVehicle);
+
 console.log(firstVehicle.move());
 console.log(secondVehicle.move());
 
